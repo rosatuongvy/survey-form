@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>   
+    <header>
+    <h1 id="title">Student Satisfaction Survey</h1> 
+    </header>
+      <body>
+    <h2> University of Foreign Language Studies</h2>   
+      <p 
+         id="description" 
+         class=" description">This survey will collect data of a student's satisfaction at the university in several particular fields. It contains questions that collect data about the referenceability of the school, grading or rating questions about school services and teaching quality as well as feedback about academic instructor, school staff and school services.</p>
+        <form id="survey-form">
+     <!-- info -->   
+        <h3>Personal Information:</h3> 
+      <ol>
+        <li><label id="name-label">Name</label><br>
+          <input 
+                 id="name" 
+                 class="name" 
+                 type="text" 
+                 placeholder="Name" 
+                 required></li>
+        <li><label id="email-label">Email</label><br>
+          <input 
+                 id="email" 
+                 class="email" 
+                 type="email" 
+                 placeholder="example@email.com" 
+                 required></li>
+        <li><label id="number-label">Date of birth</label><br>
+         <input 
+                id="number" 
+                class="day" 
+                type="number" 
+                placeholder="Day" 
+                min="1" 
+                max="31">
+        <input 
+               id="number" 
+               class="month" 
+               type="number" 
+               placeholder="Month" 
+               min="1" 
+               max="12">
+          <input 
+                 id="number" 
+                 class="year" 
+                 type="number" 
+                 placeholder="Year" 
+                 min="1990" 
+                 max="2005"></li>
+        <li>What is your class year?</li>
+        <label 
+               class="imput-radio" 
+               for="freshmen"><input 
+                                     id="freshmen" 
+                                     value ="freshmen" 
+                                     type="radio" 
+                                     name="class-year">Freshmen</label><br>
+        <label 
+               class="imput-radio" 
+               for="sophomore"><input 
+                                      id="sophomore" 
+                                      value="sophomore" 
+                                      type="radio" 
+                                      name="class-year">Sophomore</label><br>
+        <label 
+               class="imput-radio" 
+               for="junior"><input 
+                                   value="junior" 
+                                   id="junior" 
+                                   type="radio" 
+                                   name="class-year">Junior</label><br>
+        <label 
+               class="imput-radio" 
+               for="senior"><input 
+                                   id="senior" 
+                                   type="radio" 
+                                   value="senior" 
+                                   name ="class-year">Senior</label><br>
+          <label 
+                 class="imput-radio" 
+                 for="graduate"><input 
+                                       id="graduate" 
+                                       value="graduate" 
+                                       type="radio" 
+                                       name="class-year">Graduate</label><br>   
+        <li>What is/are your major(s)? Select all that apply</li>
+        <label for="english"><input class="imput-checkbox" id="english" type="checkbox" name="major" value="english">English</label><br>
+        <label for="french"><input class="imput-checkbox" id="french" type="checkbox" name="major" value="french">French</label><br>
+        <label for="russia"><input class="imput-checkbox" id="russia" type="checkbox" name="major" value="russia">Russia</label><br>
+        <label for="korean"><input class="imput-checkbox" id="korean" type="checkbox" name="major" value="korean">Korean</label><br>
+        <label for="japanese"><input class="imput-checkbox" id="japanese" type="checkbox" name="major" value="japanese">Japanese</label><br>
+        <label for="chinese"><input class="imput-checkbox" id="chinese" type="checkbox" name="major" value="chinese">Chinese</label><br>
+        <label for="thailand"><input class="imput-checkbox" id="thailand" type="checkbox" name="major" value="thailand">Thailand</label><br>
+        <label for="oriental"><input class="imput-checkbox" id="oriental" type="checkbox" name="major" value="oriental">Oriental Studies</label><br>
+        <label for="international"><input class="imput-checkbox" id="international" type="checkbox" name="major" value="international">International Studies</label><br>
+      </ol>
+      <!-- survey -->     
+      <h3>Survey Question:</h3>
+      <p>Mark from 1 to 5, with 1 is “ Very dissatisfied” and 5 is “Very satisfied”<p>
+      
+         <p>How would rate your satisfaction with the school on these parameters?</p>
+       <ul>
+          <li>Courses offered</li>
+         <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Classes registration</li>
+         <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Teaching quality</li>
+       <div class="dropdown">
+              <select 
+                      id="dropdown"  
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Testing methods</li>
+    <div class="dropdown">
+              <select 
+                      id="dropdown"  
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Grading methods</li>
+    <div class="dropdown">
+              <select 
+                      id="dropdown"  
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Extracurricular activities</li>
+     <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Infrastructure</li>
+     <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Library</li>
+       <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option"
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Access to WiFi on campus</li>
+         <div class="dropdown">
+              <select 
+                      id="rate" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Maintenance on campus</li>
+          <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+          <li>Cleanliness on campus</li>
+       <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="very-dissatisfied">1</option>
+            <option value="not-satisfied">2</option>
+            <option value="neutral">3</option>
+            <option value="satisfied">4</option>
+                <option value="very-satisfied">5</option>
+          </select>
+        </div>
+         </ul>
+    <p>Mark from 1 to 5, with 1 is “ Not helpful at all” and 5 is “Extremely helpful”</p>
+          
+          <ul>
+        <li> How helpful are the school administrative staff to issues you face?</li> 
+      <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="not-helpful-at-all">1</option>
+            <option value="slightly-helpful">2</option>
+            <option value="moderately-helpful">3</option>
+            <option value="very-helpful">4</option>
+                <option value="extremely-helpful">5</option>
+          </select>
+        </div>
+        <li>How helpful is your academic advisor?</li>
+      <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="not-helpful-at-all">1</option>
+            <option value="slightly-helpful">2</option>
+            <option value="moderately-helpful">3</option>
+            <option value="very-helpful">4</option>
+                <option value="extremely-helpful">5</option>
+          </select>
+        </div>
+        <li>How easy is it to register courses?</li>
+     <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="not-helpful-at-all">1</option>
+            <option value="slightly-helpful">2</option>
+            <option value="moderately-helpful">3</option>
+            <option value="very-helpful">4</option>
+                <option value="extremely-helpful">5</option>
+          </select>
+        </div>
+        <li>How easy is it to drop courses?</li>
+     <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="not-helpful-at-all">1</option>
+            <option value="slightly-helpful">2</option>
+            <option value="moderately-helpful">3</option>
+            <option value="very-helpful">4</option>
+                <option value="extremely-helpful">5</option>
+          </select>
+        </div>
+        <li>Overall, how satisfied are you with this school?</li>
+        <div class="dropdown">
+              <select 
+                      id="dropdown" 
+                      name="rate" 
+                      class="rate-option" 
+                      required>
+            <option disabled selected value>Select a rating</option>
+            <option value="not-helpful-at-all">1</option>
+            <option value="slightly-helpful">2</option>
+            <option value="moderately-helpful">3</option>
+            <option value="very-helpful">4</option>
+                <option value="extremely-helpful">5</option>
+          </select>
+        </div>
+        <li>Is there any other feedback you would like to provide?</li>
+      <textarea 
+                id="feedback" 
+                placeholder="Enter your feedback" 
+                name="feedback" 
+                value="feedback"></textarea>
+    </ul>   
+       <button 
+               id="submit" 
+               type="submit" 
+               class="submit-button">Submit</button>
+    </form>
+      </body>
+        
+        <footer> 
+          <p> Please contact dhnn@ufl.udn if you have any question regarding this survey.<p>
+    </main>
+</body>
+    </html>
+      
